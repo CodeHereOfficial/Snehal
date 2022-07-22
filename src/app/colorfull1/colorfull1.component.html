@@ -1,4 +1,20 @@
 <h1>Welcome to my channel, <b style="color: blue">Colorfull</b></h1>
+<hr />
+
 <p style="color:red">Dont forget to subscribe my channel</p>
-<button>LIKE</button>
+<table>
+  <tr>
+    <th  *ngFor = "let column of headers">
+     {{column}}
+    </th>
+  </tr>
+  <tr *ngFor = "let row of rows">
+    <td *ngFor = "let column of headers">
+    {{row[column]}}
+    </td>
+  </tr>
+</table>
+<br>
+<button style="margin-right:4px">LIKE</button>
+
 <button>SUBSCRIBE</button>
