@@ -2,19 +2,19 @@
 <hr />
 
 <p style="color:red">Dont forget to subscribe my channel</p>
-<table>
+<table id="format">
   <tr>
-    <th  *ngFor = "let column of headers">
-     {{column}}
+    <th *ngFor="let column of headers">
+      {{ column }}
     </th>
   </tr>
-  <tr *ngFor = "let row of rows">
-    <td *ngFor = "let column of headers">
-    {{row[column]}}
+  <tr *ngFor="let row of rows">
+    <td *ngFor="let column of headers">
+      {{ row[column] }}
     </td>
   </tr>
 </table>
-<br>
-<button style="margin-right:4px">LIKE</button>
+<br />
+<button>LIKE</button>
 
-<button>SUBSCRIBE</button>
+<button style="margin-right:4px">SUBSCRIBE</button>

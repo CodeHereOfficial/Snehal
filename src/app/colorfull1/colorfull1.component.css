@@ -1,7 +1,39 @@
 table {
   margin: auto;
   padding: auto;
-  
+}
+h1,
+p {
+  text-align: center;
 }
 
+#format td,
+#format th {
+  border: 0.5px solid rgb(0, 204, 255);
+  padding: 2px;
+  width: 200px;
+  text-align: center;
+}
 
+#format tr:hover {
+  background-color: blanchedalmond;
+}
+
+#format tr:nth-child(odd) {
+  background-color: rgb(102, 255, 0);
+}
+
+#format th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+button {
+  background-color: rgb(43, 46, 226);
+  color: white;
+  border-radius: 10px;
+  float: right;
+}
