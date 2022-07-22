@@ -7,6 +7,10 @@ p {
   text-align: center;
 }
 
+p {
+  font-weight: bold;
+}
+
 #format td,
 #format th {
   border: 0.5px solid rgb(0, 204, 255);
