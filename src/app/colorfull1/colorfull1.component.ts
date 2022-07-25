@@ -1,12 +1,27 @@
 import { Component } from '@angular/core';
+import { AlertdialogService } from '../alertdialog.service';
+import { OnInit } from '@angular/core';
 
 @Component({
   selector: 'colorfull1',
   templateUrl: './colorfull1.component.html',
   styleUrls: ['./colorfull1.component.css'],
 })
-export class Colorfull1Component {
+export class Colorfull1Component implements OnInit {
+  // SubscribeStatus = '';
+  // ShowStatusSubscribe() {
+  //   this.SubscribeStatus = 'Thank you for Subscribing';
+    
+  // }
+  ngOnInit(){
+  }
   
+  constructor(private serviceAlert: AlertdialogService){}
+  
+  btnClick() {
+    this.serviceAlert.popMessage();
+  }
+
   public headers = ['Name', 'Hobby', 'Age', 'Country'];
   public rows = [
     {

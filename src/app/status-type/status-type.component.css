@@ -1,0 +1,11 @@
+button {
+  background-color: rgb(43, 46, 226);
+  color: white;
+  border-radius: 10px;
+  float: right;
+
+}
+
+button:hover{
+  cursor: pointer;
+}
