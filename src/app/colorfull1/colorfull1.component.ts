@@ -22,6 +22,10 @@ export class Colorfull1Component implements OnInit {
     this.serviceAlert.popMessage();
   }
 
+  likeBtnClick() {
+    this.serviceAlert.popLikeMessage();
+  }
+
   public headers = ['Name', 'Hobby', 'Age', 'Country'];
   public rows = [
     {
