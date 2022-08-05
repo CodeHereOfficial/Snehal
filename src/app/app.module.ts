@@ -9,9 +9,10 @@ import { StatusTypeComponent } from './status-type/status-type.component';
 
 import { AlertdialogService } from './alertdialog.service';
 import { AppRoutingModule, routingComponent } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [AlertdialogService],
   declarations: [
     AppComponent,
